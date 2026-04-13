@@ -2,6 +2,8 @@
 
 Start here, then jump into the topic you need.
 
+**One file for your website:** [**DOCUMENTATION_FULL.md**](DOCUMENTATION_FULL.md) — everything below merged into a single Markdown (paste into Lovable / CMS / docs page).
+
 ## Guides
 
 1. [**INSTALLATION.md**](INSTALLATION.md) — Node version, clone, install both packages, verify build.

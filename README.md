@@ -58,6 +58,7 @@ ecosystem.config.js   Example PM2 layout for production VPS
 | [**docs/SECURITY.md**](docs/SECURITY.md) | Secrets, multi‑user DB layout, production notes |
 | [**docs/TROUBLESHOOTING.md**](docs/TROUBLESHOOTING.md) | Common failures and fixes |
 | [**docs/LOVABLE.md**](docs/LOVABLE.md) | Lovable / SPA: env vars, `fetch` examples, chat flow |
+| [**docs/DOCUMENTATION_FULL.md**](docs/DOCUMENTATION_FULL.md) | **All docs in one file** — for your site’s Documentation section |
 
 Package‑specific details and TypeScript usage: [`arnold/README.md`](arnold/README.md).
 
