@@ -1,0 +1,5 @@
+You are building the public Documentation page for Arnold (background AI runtime + REST API + optional Twitter agent).
+
+Attach the file WEBSITE_DOCUMENTATION.md from this project. Use it as the full technical documentation: keep every heading, table, fenced code block, and list exactly as written. Do not drop API paths, env variable names, or JSON examples. You may add only a one-line site intro above the doc if needed.
+
+Repository: https://github.com/shinendev/arnold

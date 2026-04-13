@@ -29,7 +29,7 @@ Arnold adds a **background cognitive runtime** on top of an LLM (today: Claude v
 | **Consolidation** | Decay, pruning, promotion, dedupe, contradiction hints |
 | **Scheduler** | `awake` → `idle` → `dreaming` as idle time grows |
 
-Data stays **local** (SQLite). The HTTP API is suitable for a separate frontend (e.g. Lovable) or internal tools.
+Data stays **local** (SQLite). The HTTP API is suitable for a separate frontend or internal tools.
 
 ---
 
@@ -57,8 +57,8 @@ ecosystem.config.js   Example PM2 layout for production VPS
 | [**docs/TWITTER_AGENT.md**](docs/TWITTER_AGENT.md) | Posting policy, limits, mention handling |
 | [**docs/SECURITY.md**](docs/SECURITY.md) | Secrets, multi‑user DB layout, production notes |
 | [**docs/TROUBLESHOOTING.md**](docs/TROUBLESHOOTING.md) | Common failures and fixes |
-| [**docs/LOVABLE.md**](docs/LOVABLE.md) | Lovable / SPA: env vars, `fetch` examples, chat flow |
-| [**docs/DOCUMENTATION_FULL.md**](docs/DOCUMENTATION_FULL.md) | **All docs in one file** — for your site’s Documentation section |
+| [**docs/WEBSITE_DOCUMENTATION.md**](docs/WEBSITE_DOCUMENTATION.md) | **All docs in one file** — for your site’s Documentation page |
+| [**docs/DOCUMENTATION_PROMPT.txt**](docs/DOCUMENTATION_PROMPT.txt) | Short prompt + instruction to attach the doc file |
 
 Package‑specific details and TypeScript usage: [`arnold/README.md`](arnold/README.md).
 
