@@ -59,6 +59,7 @@ ecosystem.config.js   Example PM2 layout for production VPS
 | [**docs/TROUBLESHOOTING.md**](docs/TROUBLESHOOTING.md) | Common failures and fixes |
 | [**docs/WEBSITE_DOCUMENTATION.md**](docs/WEBSITE_DOCUMENTATION.md) | **All docs in one file** — for your site’s Documentation page |
 | [**docs/DOCUMENTATION_PROMPT.txt**](docs/DOCUMENTATION_PROMPT.txt) | Short prompt + instruction to attach the doc file |
+| [**docs/WHITEPAPER.md**](docs/WHITEPAPER.md) | Vision, DMN inspiration vs implementation, positioning |
 
 Package‑specific details and TypeScript usage: [`arnold/README.md`](arnold/README.md).
 

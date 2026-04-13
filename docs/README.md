@@ -4,6 +4,8 @@
 
 **Prompt to paste in your AI / site builder:** [**DOCUMENTATION_PROMPT.txt**](DOCUMENTATION_PROMPT.txt) (tells it to use the attached `WEBSITE_DOCUMENTATION.md`).
 
+**Whitepaper (vision, DMN framing, honesty on scope):** [**WHITEPAPER.md**](WHITEPAPER.md)
+
 ---
 
 ## Guides (split files, same content as the big file)
