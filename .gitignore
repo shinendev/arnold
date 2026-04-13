@@ -6,3 +6,8 @@ data/
 .mention-cursor
 node_modules/
 .DS_Store
+
+# Local Cursor / IDE context (not part of the product)
+*cursor*context*.md
+*_cursor_context*.md
+.cursor/

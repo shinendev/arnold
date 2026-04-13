@@ -1,45 +1,81 @@
 <p align="center">
-  <img src="docs/branding/logo.png" width="200" alt="Arnold logo" />
+  <img src="docs/branding/banner.png" width="100%" alt="Arnold — background cognition" />
+</p>
+
+<h1 align="center">Arnold</h1>
+
+<p align="center">
+  <strong>An AI that thinks while you’re away.</strong><br />
+  TypeScript monorepo: long‑term memory, idle cognition loop, REST API, optional Twitter agent.
 </p>
 
 <p align="center">
-  <img src="docs/branding/banner.png" width="100%" alt="Arnold — rooftop thoughts" />
+  <a href="https://github.com/shinendev/arnold/blob/main/LICENSE">MIT</a>
+  · <a href="https://nodejs.org/">Node 20+</a>
+  · <a href="docs/README.md">Documentation</a>
 </p>
 
-# Arnold
+---
 
-**An AI that thinks while you're away** — a TypeScript runtime that adds a background cognitive loop (memory replay, associations, incubation, consolidation) on top of any LLM, plus an optional Twitter presence.
+## Why Arnold
 
-Monorepo:
+Arnold adds a **background cognitive runtime** on top of an LLM (today: Claude via `ClaudeAdapter`):
 
-| Package | Description |
-|--------|-------------|
-| [`arnold/`](arnold/) | Core npm module `arnold-subcon` — memory, subconscious loop, SQLite, REST API |
-| [`arnold-agent/`](arnold-agent/) | Twitter agent — selective replies, low daily tweet budget, Arnold’s voice |
+| Mechanism | Role |
+|-----------|------|
+| **Memory replay** | Re‑evaluates stored facts with new context |
+| **Associative linking** | Samples fact pairs, asks the model for non‑obvious connections |
+| **Incubation** | Revisits unresolved questions when more facts exist |
+| **Consolidation** | Decay, pruning, promotion, dedupe, contradiction hints |
+| **Scheduler** | `awake` → `idle` → `dreaming` as idle time grows |
 
-## Quick start
+Data stays **local** (SQLite). The HTTP API is suitable for a separate frontend (e.g. Lovable) or internal tools.
 
-**API (chat + visualization):**
+---
+
+## Repository layout
+
+```
+arnold/           npm package "arnold-subcon" — core engine + REST API
+arnold-agent/     Twitter bot — personality, tight rate limits, selective replies
+docs/             Human guides (install, config, API, deploy, architecture)
+ecosystem.config.js   Example PM2 layout for production VPS
+```
+
+---
+
+## Documentation
+
+| Doc | Contents |
+|-----|----------|
+| [**docs/README.md**](docs/README.md) | Index of all guides |
+| [**docs/INSTALLATION.md**](docs/INSTALLATION.md) | Prerequisites, clone, install, build, first run |
+| [**docs/CONFIGURATION.md**](docs/CONFIGURATION.md) | Environment variables — API vs agent |
+| [**docs/API.md**](docs/API.md) | REST endpoints, `userId`, request/response shapes |
+| [**docs/ARCHITECTURE.md**](docs/ARCHITECTURE.md) | Runtime model, memory layers, background loop |
+| [**docs/DEPLOYMENT.md**](docs/DEPLOYMENT.md) | VPS: Node, PM2, Nginx, SSL, operations |
+| [**docs/TWITTER_AGENT.md**](docs/TWITTER_AGENT.md) | Posting policy, limits, mention handling |
+| [**docs/SECURITY.md**](docs/SECURITY.md) | Secrets, multi‑user DB layout, production notes |
+| [**docs/TROUBLESHOOTING.md**](docs/TROUBLESHOOTING.md) | Common failures and fixes |
+
+Package‑specific details and TypeScript usage: [`arnold/README.md`](arnold/README.md).
+
+---
+
+## 60‑second local run (API only)
 
 ```bash
 cd arnold
-cp .env.example .env   # add CLAUDE_API_KEY
+cp .env.example .env
+# set CLAUDE_API_KEY in .env
 npm install && npm run build
-npm run start:api      # http://localhost:3210
+npm run start:api
 ```
 
-**Twitter agent:**
+Open `http://localhost:3210/api/state` — you should see JSON with `state`, fact counts, etc.
 
-```bash
-cd arnold-agent
-cp .env.example .env   # Claude + Twitter keys; see .env.example
-npm install && npm start
-```
+---
 
-See [`arnold/README.md`](arnold/README.md) for API tables, states, and configuration.
+## License
 
-## Repo
-
-[github.com/shinendev/arnold](https://github.com/shinendev/arnold)
-
-MIT
+[MIT](LICENSE)
