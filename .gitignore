@@ -7,7 +7,5 @@ data/
 node_modules/
 .DS_Store
 
-# Local Cursor / IDE context (not part of the product)
-*cursor*context*.md
-*_cursor_context*.md
-.cursor/
+# Private drafts / specs — keep files here if they must never ship (folder not in repo)
+.local/

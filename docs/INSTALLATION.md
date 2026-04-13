@@ -23,6 +23,8 @@ cd arnold
 
 The clone root (folder `arnold` by default) contains `arnold/` (core package directory) and `arnold-agent/` (Twitter).
 
+**Private notes:** anything that must never be committed can live in a **`.local/`** directory at the repo root (that path is gitignored). Only `.env.example` style templates belong in git.
+
 ---
 
 ## Core package (`arnold/`)
