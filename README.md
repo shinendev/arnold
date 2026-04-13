@@ -57,6 +57,7 @@ ecosystem.config.js   Example PM2 layout for production VPS
 | [**docs/TWITTER_AGENT.md**](docs/TWITTER_AGENT.md) | Posting policy, limits, mention handling |
 | [**docs/SECURITY.md**](docs/SECURITY.md) | Secrets, multi‑user DB layout, production notes |
 | [**docs/TROUBLESHOOTING.md**](docs/TROUBLESHOOTING.md) | Common failures and fixes |
+| [**docs/LOVABLE.md**](docs/LOVABLE.md) | Lovable / SPA: env vars, `fetch` examples, chat flow |
 
 Package‑specific details and TypeScript usage: [`arnold/README.md`](arnold/README.md).
 

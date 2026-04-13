@@ -12,6 +12,7 @@ Start here, then jump into the topic you need.
 6. [**TWITTER_AGENT.md**](TWITTER_AGENT.md) — What the bot posts, daily caps, selective replies, cursors.
 7. [**SECURITY.md**](SECURITY.md) — API keys, SQLite files, multi-user data, exposing HTTP safely.
 8. [**TROUBLESHOOTING.md**](TROUBLESHOOTING.md) — Typical errors (Claude, PM2, Twitter 401/403).
+9. [**LOVABLE.md**](LOVABLE.md) — Connect a Lovable / browser frontend to the REST API (`fetch`, env vars, HTTPS).
 
 ## Package READMEs
 
